@@ -1,0 +1,506 @@
+html
+body {
+    background-color: #060846;
+    margin: 0;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+.bg {
+    background-image: url(Blink\ 1.png);
+    background-size: cover;
+    width: 100vw;
+    height: 54vw;
+    display: flex;
+    position: relative;
+    animation-name: moving_bg;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+@keyframes moving_bg {
+    from {background-image: url(Blink\ 1.png); background-size: cover;}
+    to {background-image: url(Blink\ 2.png); background-size: cover;}
+}
+
+
+/* first page*/
+#bigrose {
+    width: 28vw;
+    height: auto;
+    display: flex;
+    position: absolute;
+    top: 13vw;
+    left: 13vw;
+    transition: width 2s, height 2s, transform 2s;
+}
+#bigrose:hover {
+    transform: rotate(180deg);
+}
+
+#light1 {
+    width: 54vw;
+    height: auto;
+    display: flex;
+    position: absolute;
+    top: 1px;
+    animation-name: lights;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes lights {
+    0% {background-image: url(light\ 1.png); background-size: cover; opacity: 0;}
+    50% {background-image: url(light\ 2.png); background-size: cover;}
+    100% {background-image: url(light\ 3.png); background-size: cover;}
+}
+
+#butterflies3 {
+    width: 45vw;
+    height: auto;
+    display: flex;
+    position: absolute;
+    top: 6vw;
+    left: 6vw;
+}
+#butterflies2 {
+    width: 33vw;
+    height: auto;
+    display: flex;
+    position: absolute;
+    top: 14vw;
+    left: 62vw;
+}
+
+
+
+/* second page */
+#female {
+    width: 26vw;
+    height: auto;
+    display: flex;
+    position: absolute;
+    top: 60.8vw;
+    left: 55vw;
+}
+#male {
+    width: 27.3vw;
+    height: auto;
+    display: flex;
+    position: absolute;
+    top: 60.4vw;
+    left: 19vw;
+}
+.top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 1s ease;
+}
+.top:hover {
+    opacity: 1;
+}
+
+#cheeks {
+    width: auto;
+    height: 11vw;
+    display: flex;
+    position: absolute;
+    top: 75vw;
+    left: 10vw;
+}
+#hearts {
+    width: auto;
+    height: 25vw;
+    display: flex;
+    position: absolute;
+    top: 92.5vw;
+}
+
+
+
+
+/* third page */
+#clock {
+    width: 67.42vw;
+    height: 47.5vw;
+    display: flex;
+    position: absolute;
+    top: 123vw;
+    left: 17vw;
+}
+#secondhand {
+    background: white;
+    height: 7vw;
+    width: 0.3vw;
+    display: flex;
+    position: absolute;
+    left: 50.1vw;
+    top: 141vw;
+    transform-origin: 50% 80%;
+    animation: rotate 30s infinite linear;
+}
+@keyframes rotate {
+    100% {
+      transform: rotateZ(360deg);
+    }
+  }
+#secondhand:hover {
+    animation-play-state: paused;
+}
+
+
+
+
+/* fourth page */
+#cured {
+    width: auto;
+    height: 42vw;
+    display: flex;
+    position: absolute;
+    top: 182vw;
+    left: 33.5vw;
+}
+.top-heart {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+.top-heart:hover {
+    opacity: 1;
+}
+#smallrose {
+    width: 10.3vw;
+    height: auto;
+    display: flex;
+    position: absolute;
+    top: 185.8vw;
+    left: 44vw;
+    transform-origin: center;
+    animation: rotate 3s infinite linear;
+}
+@keyframes rotate {
+    100% {
+      transform: rotateZ(360deg);
+    }
+}
+#butterflies2_1 {
+    width: 80vw;
+    height: auto;
+    display: flex;
+    position: absolute;
+    top: 202vw;
+    left: 7vw;
+}
+
+
+
+/* fifth page */
+#flowers1 {
+    width: 95vw;
+    height: auto;
+    display: flex;
+    position: absolute;
+    top: 250vw;
+    left: 2.5vw;
+    animation-name: flowers;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    opacity: 1;
+}
+@keyframes flowers {
+    0% {background-image: url(4\ flowers\ 1.png); background-size: cover;}
+    35% {background-image: url(4\ flowers\ 2.png); background-size: cover;}
+    65% {background-image: url(4\ flowers\ 3.png); background-size: cover;}
+    100% {background-image: url(4\ flowers\ 4.png); background-size: cover;}
+}
+#butterflies4 {
+    width: 95vw;
+    height: auto;
+    display: flex;
+    position: absolute;
+    top: 239vw;
+    left: 3vw;
+}
+
+
+/* poeam text */
+#name {
+    color: #FFC8E3;
+    font-size: 10.8vw;
+    font-family: 'Great Vibes', cursive;
+    font-style: normal;
+    position: absolute;
+    left: 69vw;
+    top: 8vw;
+    animation-name: poem_name;
+}
+#name:hover {
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes poem_name {
+    from {top: 7.3vw;}
+    to {top: 8.7vw;}
+}
+
+#poet {
+    color: white;
+    font-size: 2.1vw;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    left: 78.3vw;
+    top: 28.5vw;
+}
+#big {
+    color: #C381E2;
+    font-size: 4.9vw;
+    font-family: 'Great Vibes', cursive;
+    font-style: normal;
+    position: absolute;
+}
+#big:hover {
+    text-shadow: 0 0 40px #ceb8d8;
+}
+#mid {
+    color: white;
+    font-size: 3.5vw;
+    font-family: 'Great Vibes', cursive;
+    font-style: normal;
+    position: absolute;
+}
+#small {
+    color: white;
+    font-size: 1.56vw;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    position: absolute;
+}
+
+.one {
+    top: 88.3vw;
+    left: 21vw;
+}
+.two {
+    top: 82.3vw;
+    left: 26.5vw;
+}
+.three {
+    top: 88.3vw;
+    left: 52vw;
+}
+.four {
+    top: 94.5vw;
+    left: 30vw;
+}
+.five {
+    top: 91.1vw;
+    left: 38.2vw;
+}
+.six {
+    top: 94.5vw;
+    left: 42.8vw;
+}
+.seven {
+    top: 91.1vw;
+    left: 49.6vw;
+}
+.eight {
+    top: 96.8vw;
+    left: 35.5vw;
+}
+.nine {
+    top: 102.8vw;
+    left: 43.5vw;
+}
+.ten {
+    top: 96.8vw;
+    left: 54.5vw;
+}
+.eleven {
+    top: 102.8vw;
+    left: 62.5vw;
+}
+.twelve {
+    top: 108.8vw;
+    left: 45.5vw;
+}
+.thirdteen{
+    top: 105.5vw;
+    left: 52.5vw;
+}
+.fourteen {
+    top: 108.8vw;
+    left: 57vw;
+}
+.fifteen {
+    top: 105.5vw;
+    left: 62vw;
+}
+.sixteen {
+    top: 108.8vw;
+    left: 68vw;
+}
+.seventeen {
+    top: 121.3vw;
+    left: 5vw;
+}
+.eighteen {
+    top: 132.2vw;
+    left: 17vw;
+}
+.nineteen {
+    top: 131.3vw;
+    left: 15vw;
+}
+.twenty {
+    top: 147.2vw;
+    left: 5vw;
+}
+.twentyone {
+    top: 143.7vw;
+    left: 10.5vw;
+}
+.twentytwo {
+    top: 152vw;
+    left: 14vw;
+}
+.twentythree {
+    top: 148.5vw;
+    left: 17vw;
+}
+.twentyfour {
+    top: 141.5vw;
+    left: 72vw;
+}
+.twentyfive {
+    top: 138.2vw;
+    left: 80vw;
+}
+.twentysix {
+    top: 146.3vw;
+    left: 75.5vw;
+}
+.twentyseven {
+    top: 142.8vw;
+    left: 82.5vw;
+}
+.twentyeight {
+    top: 154.5vw;
+    left: 74vw;
+}
+.twentynine {
+    top: 154vw;
+    left: 70vw;
+}
+.thirdty {
+    top: 164.5vw;
+    left: 86vw;
+}
+.thirdtyone{
+    top: 185vw;
+    left: 16vw;
+}
+.thirdtytwo {
+    top: 181.5vw;
+    left: 19vw;
+}
+.thirdtythree {
+    top: 185vw;
+    left: 26.5vw;
+}
+.thirdtyfour {
+    top: 190.5vw;
+    left: 18vw;
+}
+.thirdtyfive {
+    top: 190.5vw;
+    left: 13vw;
+}
+.thirdtysix {
+    top: 205vw;
+    left: 71.5vw;
+}
+.thirdtyseven {
+    top: 204.2vw;
+    left: 69vw;
+}
+.thirdtyeight {
+    top: 210.2vw;
+    left: 82.5vw;
+}
+.thirdtynine {
+    top: 215vw;
+    left: 66vw;
+}
+.fourty {
+    top: 213.7vw;
+    left: 63vw;
+}
+.fourtyone {
+    top: 219.7vw;
+    left: 73.7vw;
+}
+.fourtytwo {
+    color: white;
+    font-size: 5vw;
+    font-family: 'Great Vibes', cursive;
+    font-style: normal;
+    position: absolute;
+    top: 228vw;
+    left: 26vw;
+}
+.fourtythree {
+    color: white;
+    font-size: 2.1vw;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    position: absolute;
+    top: 233vw;
+    left: 35vw;
+}
+.fourtyfour {
+    color: #C381E2;
+    font-size: 8.82vw;
+    font-family: 'Great Vibes', cursive;
+    font-style: normal;
+    position: absolute;
+    top: 229vw;
+    left: 34vw;
+    animation-name: flow;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.fourtyfour:hover {
+    animation-play-state: paused;
+    text-shadow: 0 0 40px #ceb8d8;
+}
+@keyframes flow {
+    from {top: 228.3vw;}
+    to {top: 229.7vw;}
+}
+.fourtyfive {
+    color: white;
+    font-size: 2.1vw;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    position: absolute;
+    top: 246vw;
+    left: 66vw;
+}
